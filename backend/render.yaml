@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: megan-life-backend
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DEFAULT_TIMEZONE
+        value: America/Sao_Paulo
